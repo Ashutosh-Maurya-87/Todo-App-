@@ -1,11 +1,12 @@
 import React from "react";
+import "./style/header.css";
 
 function Header() {
   return (
     <>
-      <div>
+      <div className="nav-list">
         <img src="#" alt="logo" />
-        <ul>
+        <ul id="list-display">
           <li>Home</li>
           <li>Categories</li>
           <li>Contact</li>
