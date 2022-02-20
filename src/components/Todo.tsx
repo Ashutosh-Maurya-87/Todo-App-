@@ -14,18 +14,18 @@ type profileProps = {
   age: number;
   email: string;
   phone: number;
+  // item: any;
 };
 
-function Profile(props: profileProps) {
-  const [item, setItem] = useState("Banana");
-  const handleSubmit = (e: any) => {
-    setItem("Apple");
+function Todo(props: profileProps) {
+  const [item, setItem] = useState("banana");
+  const handleSubmit = () => {
     console.log("enter btn press");
-    console.log("event value", e.target.value);
   };
 
   const inputHandler = (e: any) => {
-    console.log("event calll", e.target.value);
+    setItem("apple");
+    console.log("event value", e.target.value);
   };
 
   return (
@@ -53,4 +53,4 @@ function Profile(props: profileProps) {
   );
 }
 
-export default Profile;
+export default Todo;
